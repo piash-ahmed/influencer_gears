@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +15,9 @@
     --color-five: #3a3a3a;
 }
 
-/* Header */
+/* Navbar Styles */
 .header {
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 60px 25px 20px 25px;
 }
@@ -25,19 +26,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 30px 20px; */
 }
-
-.brand {}
 
 .brand h2 {
     font-size: 1.5rem;
     color: var(--color-one);
 }
 
-.menu {display: flex;gap: 34px;}
+.menu {
+    display: flex;
+    gap: 34px;
+}
 
-.menu-items {}
+.menu-icons span {
+    margin-right: 1rem;
+    cursor: pointer;
+}
 
 .menu-items ul {
     display: flex;
@@ -55,11 +59,60 @@
     color: var(--color-two);
 }
 
-.menu-icons {
+/* Banner Styles */
+.banner-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding-top: 7rem;
 }
 
-.menu-icons span {
-    color: var(--color-one);
-    font-size: 16px;
-    padding-right: 10px;
+.banner-content {
+    padding-top: 1rem;
+    width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 3.25rem;
+    color: var(--color-two);
+    line-height: 4.5rem;
+}
+
+.banner-content p {
+    font-size: 1rem;
+    color: var(--color-two);
+    margin: 1rem 0;
+    width: 90%;
+}
+
+.banner-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--color-three);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 2.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.lord-arrow {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+
+.banner-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/Circle-design.svg) no-repeat center;
 }
