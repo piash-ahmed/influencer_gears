@@ -13,6 +13,7 @@
     --color-three: #e02c6d;
     --color-four: #787885;
     --color-five: #3a3a3a;
+    --color-six: #6C6C6C;
 }
 
 /* Navbar Styles */
@@ -135,4 +136,32 @@
     justify-content: space-between;
     align-items: center;
     gap: 60px;
+}
+
+/* Features Section */
+.feature-container {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.feature-content h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--color-six);
+}
+
+.feature-btn {
+    border-radius: 3px;
+    padding: 10px 30px;
 }
