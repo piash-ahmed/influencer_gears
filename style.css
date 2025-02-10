@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --color-one: #18191F;
+    --color-two: #3A3A3A;
+    --color-three: #e02c6d;
+    --color-four: #787885;
+    --color-five: #3a3a3a;
+}
+
+/* Header */
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 25px 20px 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px 20px; */
+}
+
+.brand {}
+
+.brand h2 {
+    font-size: 1.5rem;
+    color: var(--color-one);
+}
+
+.menu {display: flex;gap: 34px;}
+
+.menu-items {}
+
+.menu-items ul {
+    display: flex;
+    gap: 34px;
+}
+
+.menu-items ul li {
+    list-style: none;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-two);
+}
+
+.menu-icons {
+}
+
+.menu-icons span {
+    color: var(--color-one);
+    font-size: 16px;
+    padding-right: 10px;
+}
