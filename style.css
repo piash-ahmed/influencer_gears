@@ -115,4 +115,24 @@
     justify-content: center;
     align-items: center;
     background: url(/images/Circle-design.svg) no-repeat center;
+    background-size: contain;
+    padding: 25px;
+}
+
+/* E Commerces Logo Section */
+.e-commerces-logos {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 30px 60px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-top: 1px solid #cbcbcb5b;
+    border-bottom: 1px solid #cbcbcb5b;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
 }
