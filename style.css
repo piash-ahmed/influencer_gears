@@ -76,7 +76,7 @@
 
 .banner-content h1 {
     font-size: 3.25rem;
-    color: var(--color-two);
+    color: var(--color-one);
     line-height: 4.5rem;
 }
 
@@ -174,7 +174,7 @@
 
 .populer-collection-container h1 {
     font-size: 1.75rem;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--color-one);
     text-align: center;
     margin: 50px 0;
@@ -197,6 +197,7 @@
 
 .content h2 {
     font-size: 1.75rem;
+    font-weight: 500;
     color: var(--color-one);
     margin-top: 10px;
     margin-bottom: 6px;
@@ -224,4 +225,34 @@
     font-size: 14px;
     font-weight: 700;
     color: var(--color-four);
+}
+/* Footer */
+.footer{
+    background-color: #0a0826;
+    text-align: center;
+    color: #fff;
+    padding: 50px;
+    margin-top: 75px;
+}
+.footer-content h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-content h5{
+    font-size: 14px;
+    font-weight: 400;
+    color: #D9DBE1;
+}
+.footer-social span{
+    font-size: 16px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background-color: #ffffff3b;
+    border-radius: 50%;
+    padding: 1px;
+    cursor: pointer;
+    margin: 16px 5px;
 }
