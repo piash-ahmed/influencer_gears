@@ -16,6 +16,10 @@
     --color-six: #6C6C6C;
 }
 
+.none {
+    display: none;
+}
+
 /* Navbar Styles */
 .header {
     max-width: 1280px;
@@ -42,6 +46,19 @@
 .menu-icons span {
     margin-right: 1rem;
     cursor: pointer;
+}
+
+.nav-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.hamburger-icon span {
+    font-size: 25px;
+    color: var(--color-one);
+    display: none;
 }
 
 .menu-items ul {
@@ -132,38 +149,9 @@
 }
 
 .logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     gap: 60px;
-}
-
-/* Features Section */
-.feature-container {
-    width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 96px;
-}
-
-.feature-content h2 {
-    font-size: 2.3rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.feature-content p {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 28px;
-    color: var(--color-six);
-}
-
-.feature-btn {
-    border-radius: 3px;
-    padding: 10px 30px;
 }
 
 /* Populer Collection section */
@@ -226,25 +214,57 @@
     font-weight: 700;
     color: var(--color-four);
 }
+
+/* Features Section */
+.feature-container {
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 96px;
+}
+
+.feature-content h2 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: var(--color-six);
+}
+
+.feature-btn {
+    border-radius: 3px;
+    padding: 10px 30px;
+}
+
 /* Footer */
-.footer{
+.footer {
     background-color: #0a0826;
     text-align: center;
     color: #fff;
     padding: 50px;
     margin-top: 75px;
 }
-.footer-content h2{
+
+.footer-content h2 {
     font-size: 1.75rem;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.footer-content h5{
+
+.footer-content h5 {
     font-size: 14px;
     font-weight: 400;
     color: #D9DBE1;
 }
-.footer-social span{
+
+.footer-social span {
     font-size: 16px;
     display: inline-block;
     height: 30px;
@@ -255,4 +275,69 @@
     padding: 1px;
     cursor: pointer;
     margin: 16px 5px;
+}
+
+
+
+/* Media Quary for Mobile */
+@media screen and (max-width: 576px) {
+    .search-icon {
+        display: none;
+    }
+
+    .menu-items ul li {
+        display: none;
+    }
+
+    .nav-brand {
+        gap: 100px;
+    }
+
+    .hamburger-icon span {
+        display: block;
+    }
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .e-commerces-logos {
+        width: 100%;
+    }
+
+    .logos {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .populer-collection-container {
+        width: 90%;
+    }
+
+    .collections {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-container {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 26px;
+    }
+
+    .feature-content {
+        text-align: center;
+    }
+
+    .feature-content div {
+        display: inline-block;
+
+    }
+
+    .footer {
+        width: 100%;
+    }
 }
