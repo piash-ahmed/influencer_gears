@@ -165,3 +165,63 @@
     border-radius: 3px;
     padding: 10px 30px;
 }
+
+/* Populer Collection section */
+.populer-collection-container {
+    width: 1280px;
+    margin: 100px auto;
+}
+
+.populer-collection-container h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--color-one);
+    text-align: center;
+    margin: 50px 0;
+}
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+}
+
+.card {
+    padding: 1.5rem;
+    box-shadow: rgb(0 0 0 / 8%) 5px 10px 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 1.75rem;
+    color: var(--color-one);
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.content .icons i {
+    font-size: 11px;
+    color: #FB8200;
+}
+
+.content .icons span {
+    font-size: 14px;
+    margin-left: 8px;
+    color: var(--color-four);
+    font-weight: 600;
+}
+
+.content .icons h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-four);
+}
